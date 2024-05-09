@@ -6,24 +6,24 @@
     <div class="card border-light-subtle shadow-sm">
       <div class="row g-0">
         <div class="col-12 col-md-6">
-          <img class="img-fluid rounded-start w-100 h-100 " loading="lazy"  src="{{ asset('images/logo2.jpg') }}" alt="BootstrapBrain Logo">
+          <img class="img-fluid rounded-start w-100 h-100 " loading="lazy"  src="{{ asset('images/logo2.jpg') }}" alt=" Logo">
         </div>
         <div class="col-12 col-md-6">
           <div class="card-body p-3 p-md-4 p-xl-5">
             <div class="row">
               <div class="col-12">
                 <div class="mb-5">
-                  <h3>{{ __('Login') }}</h3>
+                  <h2  style="color: rgba(6, 131, 233, 0.785);font-size: 50px" class="text-center">sign up </h2>
                 </div>
               </div>
             </div>
             <form method="POST" action="{{ route('login') }}">
               @csrf
 
-              <div class="row mb-3">
-                <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+              <div class=" mb-4">
+                <label for="email" class="col-form-label text-md-end">{{ __('Email Address') }}</label>
 
-                <div class="col-md-6">
+                <div class="">
                   <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                   @error('email')
@@ -34,10 +34,10 @@
                 </div>
               </div>
 
-              <div class="row mb-3">
-                <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+              <div class="mb-3">
+                <label for="password" class=" col-form-label text-md-end">{{ __('Password') }}</label>
 
-                <div class="col-md-6">
+                <div class="">
                   <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                   @error('password')
@@ -48,20 +48,20 @@
                 </div>
               </div>
 
-              <div class="row mb-3">
-                <div class="col-md-6 offset-md-4">
+              <div class=" mb-4">
+                <div class=" ">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                     <label class="form-check-label" for="remember">
-                      {{ __('Remember Me') }}
+                      Remember Me
                     </label>
                   </div>
                 </div>
               </div>
 
-              <div class="row mb-0">
-                <div class="col-md-8 offset-md-4">
+              <div class="">
+                <div class="">
                   <button type="submit" class="btn btn-primary">
                     {{ __('Login') }}
                   </button>
