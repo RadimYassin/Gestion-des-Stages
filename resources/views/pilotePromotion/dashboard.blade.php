@@ -12,12 +12,7 @@
                     @auth
                         <li><a class="rubik-scribble" href="{{ route('profile.profile') }}">profile</a></li>
                         <li><a class="rubik-scribble" href="{{ route('entreprise.create') }}">Create Entreprise</a></li>
-                        <li>
-                            <form action="{{ route('logout') }}" method="POST">
-                                @csrf
-                                <button type="submit">Logout</button>
-                            </form>
-                        </li>
+                       
                     @else
                         <li><a class="rubik-scribble" href="{{ route('login') }}">Connexion</a></li>
                         <li><a  class="rubik-scribble" href="{{ route('register') }}">Register</a></li>
@@ -34,22 +29,22 @@
 
     <div class="container" style="text-align: center;">
         <h2 style="color: #ff6600;">Chercher Un Stage et Postuler Votre Candidature </h2>
-        <p style="color: wheat;">Vous devez Choisir Un stage Selon vous compétances n'oublier pas d'evaluer les entreprise</p>
+        <p style="color: rgb(44, 43, 42);">Vous devez Choisir Un stage Selon vous compétances n'oublier pas d'evaluer les entreprise</p>
        
-        <div class="links" style="display:flex; justify-content: center;flex-wrap:wrap;" >
-                <a class="btn-orange " href="/stageoffers"class="action-btn">Offres de stage</a>
-                <a class="btn-orange " href="{{ route('profile.profile') }}">profile</a>
-                <a class="btn-orange " href="{{ route('admins.pilotes') }}">Gestion des Pilotes</a>
-                <!-- <a class="btn-orange " href="{{ route('profile.profile') }}">Nouveau Pilote</a> -->
-                <a class="btn-orange " href="{{ route('pilotePromotion.preview') }}">editer</a>
-                <a class="btn-orange " href="{{ route('entreprise.create') }}">Create Entreprise</a>
-                <a class="btn-orange " href="{{ route('entreprise.index') }}">Les Entreprise</a>
-                <!-- <a class="btn-orange " href="{{ route('offers.stat') }}">Les Statistique des entreprise</a> -->
+        <div class="" style="display:flex; justify-content: center;flex-wrap:wrap;gap:5px;" >
+                <a class="btn btn-primary " href="/stageoffers"class="action-btn">Offres de stage</a>
+                <a class="btn btn-primary " href="{{ route('profile.profile') }}">profile</a>
+                <a class="btn btn-primary " href="{{ route('admins.pilotes') }}">Gestion des Pilotes</a>
+                <a class="btn btn-primary " href="{{ route('profile.profile') }}">Nouveau Pilote</a>
+                <a class="btn btn-primary " href="{{ route('pilotePromotion.preview') }}">editer</a>
+                <a class="btn btn-primary " href="{{ route('entreprise.create') }}">Create Entreprise</a>
+                <a class="btn btn-primary " href="{{ route('entreprise.index') }}">Les Entreprise</a>
+                <a class="btn btn-primary " href="{{ route('offers.stat') }}">Les Statistique des entreprise</a>
         </div>
         
         
     </div>
-      <div  style="text-align: center;margin-top:2%">
+      <div  style="text-align: center;margin-top:6%">
                 <div class="newcard">
                     <div class="newcard-body">
                         <h5 class="newcard-title">Pilotes</h5>

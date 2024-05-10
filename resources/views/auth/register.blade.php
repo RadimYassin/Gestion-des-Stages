@@ -1,13 +1,13 @@
 @extends('layouts.app')
-@vite(['resources/css/register.css',])
+<!-- @vite(['resources/css/register.css',]) -->
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card shadow-lg p-4">
-                <div class="card-header text-white text-center">
-                    <h4>{{ __('Register') }}</h4>
-                </div>
+                <!-- <div class="card-header text-white text-center"> -->
+                  <h2  style="color: rgba(6, 131, 233, 0.785);font-size: 50px" class="text-center">Register </h2>
+                <!-- </div> -->
                 <div class="card-body">
                     <form method="POST" action="{{ route('register.store') }}" id="registerForm">
                         @csrf
@@ -54,7 +54,7 @@
                             <input id="secteur" type="text" class="form-control" name="secteur">
                         </div> -->
                         <div class="mb-3">
-                            <button type="submit" class="btn btn-orange w-100">{{ __('Register') }}</button>
+                            <button type="submit" class="btn btn-primary w-100">{{ __('Register') }}</button>
                         </div>
                     </form>
                 </div>

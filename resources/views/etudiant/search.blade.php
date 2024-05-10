@@ -3,21 +3,21 @@
 @section('content')
 <body style="background-color: #000000; color: #ffffff;" id="etudiant">
 
-    <div class="welcome" style="background-color: #ff6600; padding: 20px; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); margin: 20px auto;">
+    <div class="welcome" style="background-color: #595958; padding: 20px; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); margin: 20px auto;">
 
-        <h2 style="background-color: #ff6600; text-align:center; padding: 10px; border-radius: 5px; margin-bottom: 20px;">Résultats de la recherche</h2>
+        <h2 style="background-color: #595958 text-align:center; padding: 10px; border-radius: 5px; margin-bottom: 20px;">Résultats de la recherche</h2>
 
         <table class="offers-table" style="width: 100%; border-collapse: collapse;">
             <thead>
                 <tr>
-                    <th style="padding: 15px; background-color: #ff6600; text-align: left; font-weight: bold;">Nom de l'offre</th>
-                    <th style="padding: 15px; background-color: #ff6600; text-align: left; font-weight: bold;">Compétences requises</th>
-                    <th style="padding: 15px; background-color: #ff6600; text-align: left; font-weight: bold;">Durée </th>
-                    <th style="padding: 15px; background-color: #ff6600; text-align: left; font-weight: bold;">Entreprise</th>
-                    <th style="padding: 15px; background-color: #ff6600; text-align: center; font-weight: bold;">Postuler</th>
-                    <th style="padding: 15px; background-color: #ff6600; text-align: center; font-weight: bold;">Evaluer</th>
-                    <th style="padding: 15px; background-color: #ff6600; text-align: center; font-weight: bold;">Consulter</th>
-                    <th style="padding: 15px; background-color: #ff6600; text-align: center; font-weight: bold;">Ajouter</th>
+                    <th style="padding: 15px; background-color: #595958 text-align: left; font-weight: bold;">Nom de l'offre</th>
+                    <th style="padding: 15px; background-color: #595958 text-align: left; font-weight: bold;">Compétences requises</th>
+                    <th style="padding: 15px; background-color: #595958 text-align: left; font-weight: bold;">Durée </th>
+                    <th style="padding: 15px; background-color: #595958 text-align: left; font-weight: bold;">Entreprise</th>
+                    <th style="padding: 15px; background-color: #595958 text-align: center; font-weight: bold;">Postuler</th>
+                    <th style="padding: 15px; background-color: #595958 text-align: center; font-weight: bold;">Evaluer</th>
+                    <th style="padding: 15px; background-color: #595958 text-align: center; font-weight: bold;">Consulter</th>
+                    <th style="padding: 15px; background-color: #595958 text-align: center; font-weight: bold;">Ajouter</th>
                 </tr>
             </thead>
             <tbody style="font-family: monospace;">

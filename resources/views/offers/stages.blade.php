@@ -38,7 +38,7 @@
                 const offersBody = document.querySelector('#offers-table tbody');
                 data.offers.forEach(offer => {
                     const row = `
-                        <tr>
+                        <tr ">
                             <td>${offer.entreprise.name}</td>
                             <td>${offer.name}</td>
                             <td>${offer.type}</td>

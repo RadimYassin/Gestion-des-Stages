@@ -2,7 +2,7 @@
 .profile {
     margin: 50px auto;
     padding: 20px;
-    background-color: #a9490575;
+    background-color:  #595958;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -12,7 +12,7 @@
 }
 
 p{
-    color: wheat;
+    color: rgb(255, 255, 255);
     font-size: larger;
 }
 
@@ -32,8 +32,7 @@ header {
 }
 
 .btn-primary {
-    background-color: #000;
-    color: #ff6600;
+    color: #d2cfcd;
     border: none;
     border-radius: 5px;
     padding: 8px 16px;
@@ -44,8 +43,8 @@ header {
 }
 
 .btn-primary:hover {
-    background-color: #ff6600;
-    color: #000;
+    background-color: #0a54a3;
+    color: #d2cbcb;
 }
 
 .form-logout {

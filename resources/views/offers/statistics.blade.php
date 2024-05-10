@@ -4,14 +4,14 @@
     <div class="container">
         <h1 style="text-align: center;">Gestion Des Applications Statistics</h1>
         <div class="row">
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 text-dark">
                 <a href="{{ route('offers.stages') }}" class="text-decoration-none text-dark">
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="mb-0">Total Offers</h5>
+                            <h5 class="mb-0  text-dark">Total Offers</h5>
                         </div>
                         <div class="card-body">
-                            <p class="mb-0">{{ $totalOffers }}</p>
+                            <p class="mb-0  text-dark">{{ $totalOffers }}</p>
                         </div>
                     </div>
                 </a>
@@ -19,10 +19,10 @@
             <div class="col-md-6 mb-4">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="mb-0">Total Candidates</h5>
+                        <h5 class="mb-0  text-dark">Total Candidates</h5>
                     </div>
                     <div class="card-body">
-                        <p class="mb-0">{{ $totalCandidates }}</p>
+                        <p class="mb-0  text-dark">{{ $totalCandidates }}</p>
                     </div>
                 </div>
             </div>
@@ -30,10 +30,10 @@
                 <a href="{{ route('admins.entreprises') }}" class="text-decoration-none text-dark">
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="mb-0">Total Entreprises</h5>
+                            <h5 class="mb-0  text-dark">Total Entreprises</h5>
                         </div>
                         <div class="card-body">
-                            <p class="mb-0">{{ $totalEntreprises }}</p>
+                            <p class="mb-0  text-dark">{{ $totalEntreprises }}</p>
                         </div>
                     </div>
                 </a>
@@ -42,10 +42,10 @@
                 <a href="{{ route('admins.etudiants') }}" class="text-decoration-none text-dark">
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="mb-0">Total Etudiants</h5>
+                            <h5 class="mb-0  text-dark">Total Etudiants</h5>
                         </div>
                         <div class="card-body">
-                            <p class="mb-0">{{ $totalEtudiants }}</p>
+                            <p class="mb-0  text-dark">{{ $totalEtudiants }}</p>
                         </div>
                     </div>
                 </a>
@@ -54,10 +54,10 @@
                 <a href="{{ route('admins.pilotes') }}" class="text-decoration-none text-dark">
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="mb-0">Total Pilotes</h5>
+                            <h5 class="mb-0  text-dark">Total Pilotes</h5>
                         </div>
                         <div class="card-body">
-                            <p class="mb-0">{{ $totalPilotes }}</p>
+                            <p class="mb-0  text-dark">{{ $totalPilotes }}</p>
                         </div>
                     </div>
                 </a>
@@ -65,20 +65,20 @@
             <div class="col-md-6 mb-4">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="mb-0">Total Evaluation par Pilote</h5>
+                        <h5 class="mb-0  text-dark">Total Evaluation par Pilote</h5>
                     </div>
                     <div class="card-body">
-                        <p class="mb-0">{{ $totalEvaluationsPilote }}</p>
+                        <p class="mb-0  text-dark">{{ $totalEvaluationsPilote }}</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 mb-4">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="mb-0">Total Evaluation des entreprise</h5>
+                        <h5 class="mb-0  text-dark">Total Evaluation des entreprise</h5>
                     </div>
                     <div class="card-body">
-                        <p class="mb-0">{{ $totalEvaluationsEntreprise }}</p>
+                        <p class="mb-0  text-dark">{{ $totalEvaluationsEntreprise }}</p>
                     </div>
                 </div>
             </div>
@@ -86,10 +86,10 @@
                 <a href="{{ route('admins.admins') }}" class="text-decoration-none text-dark">
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="mb-0">Total Admins</h5>
+                            <h5 class="mb-0  text-dark">Total Admins</h5>
                         </div>
                         <div class="card-body">
-                            <p class="mb-0">{{ $totalAdmins }}</p>
+                            <p class="mb-0  text-dark">{{ $totalAdmins }}</p>
                         </div>
                     </div>
                 </a>
@@ -97,10 +97,10 @@
             <div class="col-md-6 mb-4">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="mb-0">Total Promotions</h5>
+                        <h5 class="mb-0  text-dark">Total Promotions</h5>
                     </div>
                     <div class="card-body">
-                        <p class="mb-0">{{ $totalPromotions }}</p>
+                        <p class="mb-0  text-dark">{{ $totalPromotions }}</p>
                     </div>
                 </div>
             </div>

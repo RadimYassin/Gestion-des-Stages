@@ -1,5 +1,5 @@
 #etudiant{
-    background-color: #000;
+  
     font-family: "Rubik Scribble", system-ui;
         font-weight: 400;
         font-style: normal;
@@ -28,7 +28,6 @@
     }
 
     header {
-        background-color: #000;
         color: #ff6600;
         /* Yellow text */
         text-align: center;
@@ -39,7 +38,6 @@
         list-style-type: none;
         padding: 0;
         text-align: center;
-        background-color: #000;
         margin: 0;
     }
 
@@ -57,14 +55,13 @@
     .container {
         max-width: 800px;
         padding: 20px;
-        background-color: black;
+        background-color: rgba(65, 57, 57, 0.911);
         /* Yellow background */
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     footer {
-        background-color: #000;
         color: white;
         /* Yellow text */
         text-align: center;
@@ -98,4 +95,10 @@
     h2
                 {
                 color: black;
+     }
+
+
+     .additional-fields{
+        background-color: aqua;
+        display: flex;
      }
