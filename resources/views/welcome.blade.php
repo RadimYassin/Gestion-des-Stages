@@ -21,12 +21,6 @@
                     @elseif(Auth::user()->usertype === 'admin')
                         <li><a  class="" style="color:black"  href="{{ route('admins.index') }}">Admin</a></li>
                     @endif
-                    <li>
-                        <form action="{{ route('logout') }}" method="POST">
-                            @csrf
-                            <button type="submit" class="btn-primary">Déconnexion</button>
-                        </form>
-                    </li>
                 @else
                   
                 <li>
