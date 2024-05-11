@@ -62,22 +62,7 @@ Route::post('/User/register', [RegisterController::class, 'store'])->name('regis
 
 Route::put('/entreprises/{id}', [EntrepriseController::class, 'update'])->name('entreprise.update');
 Route::get('/entreprise/create', [EntrepriseController::class, 'create'])->name('entreprise.create');
-// Route::get('/entreprise/{id}', [EntrepriseController::class, 'create'])->name('entreprise.create');
-// Route::get('/entreprise/store', [EntrepriseController::class, 'store'])->name('entreprise.store');
-// Route::get('/entreprises/{id}/fiche', [EntrepriseController::class, 'preview'])->name('entreprise.fiche');
 
-// Route::get('/entreprises/{user_id}/fiche', function ($user_id) {
-//     // Fetch the entreprise_id based on the user_id
-//     $entreprise_id = Entreprise::where('user_id', $user_id)->value('entreprise_id');
-
-//     // If entreprise_id is found, redirect to the fiche route with the entreprise_id
-//     if ($entreprise_id) {
-//         return redirect()->route('entreprise.fiche', ['id' => $entreprise_id]);
-//     } else {
-//         // Handle the case where entreprise_id is not found
-//         return response()->json(['error' => 'Entreprise not found'], 404);
-//     }
-// });
 Route::get('/entreprises/{id}/getfiche', [EntrepriseController::class, 'preview'])->name('entreprise.fiche');
 Route::get('/entreprises/{id}', [EntrepriseController::class, 'show'])->name('entreprise.show');
 
@@ -176,9 +161,7 @@ Route::get('/etudiant', function () {
     return view('etudiant.dashboard');
 })->name('etudiant.etudiant');
 
-// Route::get('/pilotedestage', function () {
-//     return view('pilotePromotion.dashboard');
-// })->name('pilotePromotion.pilote');
+
 
 Route::get('/pilotedestage', function () {
     return view('pilotePromotion.dashboard');
@@ -190,9 +173,6 @@ Route::get('/pilotefiche', function () {
 })->name('pilotePromotion.preview');
 
 
-// Route::get('/entreprise', function () {
-//     return view('entreprise.dashboard');
-// })->name('entreprise.dashboard');
 
 Route::get('/get-additional-fields/{userType}', [App\Http\Controllers\Auth\RegisterController::class, 'getAdditionalFields']);
 
@@ -258,17 +238,6 @@ use App\Models\Wishlist;
 
 
 
-
-// Route::get('/get-evaluation_details', function ($entreprise_id) {
-
-//     $entreprise = Entreprise::where('entreprise_id', $entreprise_id);
-//     $etudiant = Etudiant::where('user_id',auth()->id());
-
-//     return response()->json([
-//         'entreprise' => $entreprise,
-//         'etudiant' => $etudiant,
-//     ]);
-// });
 
 Route::get('/get-evaluation_details/{entreprise_id}', function ($entreprise_id) {
     // Retrieve the enterprise details based on the provided entreprise_id

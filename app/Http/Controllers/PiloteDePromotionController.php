@@ -19,17 +19,7 @@ class PiloteDePromotionController extends Controller
     }
      
 
-        // public function fetchPilote()
-        // {
-        //     $pilote = PiloteDePromotion::where('user_id', auth()->id())->first();
-            
-        //     if (!$pilote) {
-        //         return response()->json(['error' => 'Pilote not found'], 404);
-        //     }
-
-        //     return response()->json(['pilote' => $pilote]);
-        // }
-
+    
     public function store(Request $request)
     {
         $request->validate([

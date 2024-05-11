@@ -71,7 +71,7 @@ public function store(Request $request)
 
 
 
-    return redirect()->route('pilotePromotion.dashboard')
+    return redirect()->route('admins.index')
                      ->with('success', 'Entreprise created successfully.');
 }
 public function preview($id)

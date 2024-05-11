@@ -72,10 +72,7 @@
             promotionField.style.display = 'block';
             secteurField.style.display = 'none';
         } 
-        // else if (userType === 'entreprise') {
-        //     promotionField.style.display = 'none';
-        //     secteurField.style.display = 'block';
-        // } 
+       
         else {
             promotionField.style.display = 'none';
             secteurField.style.display = 'none';

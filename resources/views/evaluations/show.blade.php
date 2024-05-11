@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h2 style="color: #ff6600; font-size: 24px; margin-bottom: 20px;">Evaluations for {{ $entreprise->name }}</h2>
+        <h2 style="color: #000000; font-size: 24px; margin-bottom: 20px;">Evaluations for {{ $entreprise->name }}</h2>
 
         <!-- Display each evaluation -->
         <ul style="list-style-type: none; padding: 0;">

@@ -37,18 +37,17 @@
                 <a class="btn btn-primary " href="{{ route('admins.pilotes') }}">Gestion des Pilotes</a>
                 <a class="btn btn-primary " href="{{ route('profile.profile') }}">Nouveau Pilote</a>
                 <a class="btn btn-primary " href="{{ route('pilotePromotion.preview') }}">editer</a>
-                <a class="btn btn-primary " href="{{ route('entreprise.create') }}">Create Entreprise</a>
-                <a class="btn btn-primary " href="{{ route('entreprise.index') }}">Les Entreprise</a>
+              
                 <a class="btn btn-primary " href="{{ route('offers.stat') }}">Les Statistique des entreprise</a>
         </div>
         
         
     </div>
       <div  style="text-align: center;margin-top:6%">
-                <div class="newcard">
-                    <div class="newcard-body">
-                        <h5 class="newcard-title">Pilotes</h5>
-                        <p class="newcard-text">View, update, and delete pilotes records.</p>
+                <div >
+                    <div >
+                        <h5 >Pilotes</h5>
+                        <p >View, update, and delete pilotes records.</p>
                         <a href="{{ route('admins.pilotes') }}" class=" btn-primary">Go to Pilotes</a>
                     </div>
                 </div>

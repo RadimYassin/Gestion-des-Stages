@@ -60,12 +60,3 @@
 
 
 
-       <!-- // <td>
-                            //     <a class="btn btn-primary postuler-btn" href="/evaluations/${entreprise.entreprise_id}">offers</a>
-                            // </td>
-                            // <td>
-                            //     <a class="btn btn-primary postuler-btn" href="/evaluations/${entreprise.entreprise_id}">Edit Fiche</a>
-                            // </td>
-                            // <td>
-                            //     <a class="btn btn-primary postuler-btn" href="/evaluations/${entreprise.entreprise_id}">Statistics</a>
-                            // </td> -->

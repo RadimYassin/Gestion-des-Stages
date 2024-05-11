@@ -4,34 +4,11 @@
 <div class="welcome" style="background-color: white;">
      <header>
         <h1 style="color: black;">Gestion des offres de stage pour les étudiants</h1>
+        <a class="btn btn-primary mx-5 " href="{{ route('entreprise.create') }}">Create Entreprise</a>
+        <a class="btn btn-primary " href="{{ route('entreprise.index') }}">Les Entreprise</a>
     </header>
 
    <nav>
-<ul>
-    <li><a style="color: black;" class="bebas-neue-regular" href="/">Accueil</a></li>
-    <li><a style="color: black;" class="bebas-neue-regular" href="#">Offres de stage</a></li>
-    <li><a style="color: black;" class="bebas-neue-regular" href="{{ route('profile.profile') }}">Profil</a></li>
-    <li><a style="color: black;" class="bebas-neue-regular" href="{{ route('login') }}">Connexion</a></li>
-    <li><a style="color: black;" class="bebas-neue-regular" href="{{ route('entreprise.create') }}">Créer une entreprise</a></li>
-    <li><a style="color: black;" class="bebas-neue-regular" href="{{ route('etudiant.etudiant') }}">Dashboard Étudiant</a></li>
-    <li><a style="color: black;" class="bebas-neue-regular" href="{{ route('pilotePromotion.dashboard') }}">Dashboard Pilote</a></li>
-    <li><a style="color: black;" class="bebas-neue-regular" href="{{ route('register') }}">Register</a></li>
-    <li>
-       <form action="{{ route('search.offres-stage') }}" method="GET" class="search-form">
-                        <div class="search-input">
-                            <input type="text"style="color: #ff6600;" name="query" placeholder="Rechercher offre de stage..." class="search-input-field">
-                            <button type="submit"style="margin-left:10px;" class="btn btn-primary"><img src="{{ asset('images/search.png') }}" alt="Logo" style="width: 60%;"></button>
-                        </div>
-                        <div class="additional-fields">
-                            <input type="text" style="color: #ff6600;" name="entreprise_name" placeholder="Nom de l'entreprise..." class="additional-field">
-                            <input type="text" style="color: #ff6600;"name="location" placeholder="Lieu..." class="additional-field">
-                            <input type="text" style="color: #ff6600;"name="competence" placeholder="Compétences..." class="additional-field">
-                        </div>
-        </form>
-    </li>
-</ul>
-
-
 
 <div class="row">
 <h1 class="bebas-neue-regular"    style="color: black;">Gestion des Comptes</h1>
@@ -104,51 +81,4 @@
     </div>
   </div>
 </div>
-
-
-<!--     
-<script>
-
-        document.addEventListener('DOMContentLoaded', function() {
-            fetchOffers();
-             
-        });
-
-            function fetchOffers() {
-                fetch('/get-all-offers').then(response => response.json()).then(data => {
-            console.log();
-            const offersBody = document.getElementById('offers-body');
-            data.offers.forEach((offer, index) => {
-                const row = `
-                    <tr>
-                        <td class="bebas-neue-regular " style="color: black;;">${offer.name}</td>
-                        <td class="bebas-neue-regular " style="color: black;;">${offer.name}</td>
-                        <td class="bebas-neue-regular " style="color: black;;">${offer.type}</td>
-                        <td class="bebas-neue-regular " style="color: black;;">${offer.duree}</td>
-                        <td class="bebas-neue-regular " style="color: black;;">
-                            <a href="/offers/${offer.id}/edit" class="btn btn-primary">Modifier</a>
-                            <a href="/offers/${offer.id}/showCandidates" class="btn btn-primary">Voir Candidats</a>
-                        </td>
-                    </tr>
-                `;
-                offersBody.innerHTML += row;
-            });
-        })
-        .catch(error => console.error('Error fetching offers:', error));
-    }
-  // JavaScript code to redirect
-    window.onload = function() {
-        // Perform the redirection based on conditions
-        // Example: Redirect to the appropriate page based on user type
-        let userType = '{{ Auth::user() ? Auth::user()->usertype : null }}'; // Get the user type from the authenticated user
-        if (userType !== null) {
-            if (userType === 'etudiant') {
-                window.location.href = "{{ route('etudiant.etudiant') }}"; // Redirect to etudiant index page
-            } else if (userType === 'pilotedestage') {
-                window.location.href = "{{ route('pilotePromotion.dashboard') }}"; // Redirect to pilotedestage index page
-            } 
-        }}
-</script> -->
-
-
 @endsection
